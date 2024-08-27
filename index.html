@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: lightcoral;
+        }
+
+        header {
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .effects {
+            position: relative;
+            min-height: 75vh;
+            margin-top: 40px;
+        }
+
+        .effect1 {
+            position: absolute;
+            top: 30px;
+            left: 100px;
+            border: 2px solid black;
+            width: 500px;
+            height: 250px;
+            padding-left: 20px;
+            transition: transform 5s ease-in-out, background-color 3s ease 1s;
+        }
+
+        .effect1 h2 {
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
+
+        .effect1 img {
+            border-radius: 10px;
+            transition: transform 2.5s ease-in-out, border-radius 3s ease;
+        }
+
+        .effect1:hover {
+            transform: rotate(15deg);
+            background-color: lightblue;
+        }
+
+        .effect1:hover img {
+            transform: translateX(80px);
+            border-radius: 50%;
+        }
+
+        .effect2 {
+            position: absolute;
+            top: 30px;
+            right: 300px;
+            border: 2px solid black;
+            width: 250px;
+            height: 250px;
+            padding-left: 20px;
+            transition: transform 5s ease-in-out, width 5s ease 1s, background-color 3s ease 1s;
+        }
+
+        .effect2 h2 {
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
+
+        .effect2:hover {
+            transform: scale(1.5);
+            width: 350px;
+            height: auto;
+            background-color: lightgreen;
+        }
+
+        .effect3 {
+            position: absolute;
+            top: 350px;
+            left: 100px;
+            border: 2px solid black;
+            width: 40%;
+            height: 75px;
+            padding-left: 20px;
+            transition: transform 2s ease-in-out;
+        }
+        .effect3:hover {
+            transform: skewY(10deg);
+        }
+
+        .effect4 {
+            position: absolute;
+            top: 350px;
+            right: 100px;
+            border: 2px solid black;
+            width: 40%;
+            height: 75px;
+            padding-left: 20px;
+            transition: transform 2s ease-in-out;
+        }
+
+        .effect4:hover {
+            transform: translateX(30px);
+            color: red;
+        }
+
+        footer {
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Transition & Transforms</h1>
+    </header>
+
+    <section>
+        <div class="effects">
+            <div class="effect1">
+                <h2>Rotate & Background-color</h2>
+                <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="" width="200px">
+            </div>
+
+            <div class="effect2">
+                <h2>Scale & Resize</h2>
+                <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg"
+                    alt="" width="200px" height="180px">
+            </div>
+
+            <div class="effect3">
+                <h2>Skew & Opacity</h2>
+            </div>
+
+            <div class="effect4">
+                <h2>Translate & Text-color</h2>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hari</p>
+    </footer>
+</body>
+
+</html>
